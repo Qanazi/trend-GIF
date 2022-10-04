@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+    <head>
+        <title>trnding GIF</title>
+    </head>
+    <link rel="stylesheet" href="style.css">
+    <body>
+
+        <div class="containAll">
+            <div id="gifArea" class="flexContainer">
+                <div class ="close" >
+                    <head id="head-title">GIF</head>
+                    <button id="close-button"  onclick="hide ()">&times;</button>
+                </div>
+                <div class ="search" id="search" >
+                    <input id="searchBox"  type="search" placeholder="search for GIF"  onkeyup="storetypedtext(this)">
+                </div>
+                <div   id="gifContainer"  onscroll="infinityscroll()">
+                    
+    
+                </div>
+                
+            </div>
+            <div>
+                <button  id="gifButton" ondblclick="view () ,getTrendGifs()" onclick="findagifBTclick() " >GIF</button>
+            </div>
+            
+
+        </div>
+
+       
+    </body>
+    <script src="script.js"></script>
+</html>

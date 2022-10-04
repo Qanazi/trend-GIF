@@ -1,0 +1,181 @@
+
+.containAll{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height: 100%;
+    justify-content: center;
+   
+    border-radius: 8px;
+    
+    
+    
+    
+}
+
+div{
+    padding: 4px;
+    
+}
+.search{
+    box-align :center;
+}
+#searchBox{
+    
+    padding: 5px;
+    width:280px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: rgb(224, 224, 224);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+#gifContainer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    overflow-y:auto;
+    scroll-behavior: smooth;
+    padding: 20px;
+}
+#gifArea{
+    display: none;
+    flex-direction: column;
+    width:300px;
+    height: 400px;
+    background-color: rgb(224, 224, 224);
+    
+    border-radius: 8px;
+    padding: 5px;
+    
+}
+.gifs{
+    width: 250px;
+    height: 250px;
+    margin-top: 5px;
+    border-radius: 8px;
+}
+/*#gifArea{
+    background-color: rgb(224, 224, 224);
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 200px;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    position: fixed;
+      
+  }*/
+.close{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#close-button{
+    font-size: medium;
+    font-weight: bold;
+    background-color: none;
+    background: none;
+    border: none;
+}
+#head-title{
+    font-size: medium;
+    font-weight: bold;
+    
+}
+
+#gifButton{
+    width: 80px;
+    height: 25px;
+    color: white;
+
+border: none;
+background-color: rgb(214, 100, 210);
+border-radius: 8px;
+
+}
+
+#gifButton:hover{
+    background-color:rgb(148, 48, 145) ;
+}
+
+.gifBT {
+    all: unset;
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    position: relative;
+    color: #f0f0f0;
+    cursor: pointer;
+    z-index: 1;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.gifBT::after,
+.gifBT::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -99999;
+  transition: all .4s;
+}
+
+.gifBT::before {
+  transform: translate(0%, 0%);
+  width: 100%;
+  height: 100%;
+  background: #28282d;
+  border-radius: 10px;
+}
+
+.gifBT::after {
+  transform: translate(10px, 10px);
+  width: 35px;
+  height: 35px;
+  background: #ffffff15;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 50px;
+}
+
+.gifBT:hover::before {
+  transform: translate(5%, 20%);
+  width: 110%;
+  height: 110%;
+}
+
+.gifBT:hover::after {
+  border-radius: 10px;
+  transform: translate(0, 0);
+  width: 100%;
+  height: 100%;
+}
+
+.gifBT:active::after {
+  transition: 0s;
+  transform: translate(0, 5%);
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
